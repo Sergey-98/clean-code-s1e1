@@ -12,11 +12,11 @@
   text-align: right;
 }
 
-.matrix-image {
+.header__image {
   width: 100%;
 }
 
-.more-info {
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -28,7 +28,7 @@
 
 }
 
-.main-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -40,7 +40,7 @@
   flex-grow: 1;
 }
 
-.task-wrapper {
+.adding-section__task-wrapper {
   display: flex;
 }
 
@@ -49,7 +49,7 @@
   padding: 0px;
 }
 
-.list-item {
+.list__item {
   list-style: none;
 }
 
@@ -74,7 +74,7 @@
 
 /* Heading */
 .title,
-.new-task {
+.adding-section__new-task {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -84,7 +84,7 @@
   text-transform: uppercase;
 }
 
-.input-text {
+.input_text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -97,22 +97,22 @@
   color: #888;
 }
 
-.input-text:focus {
+.input_text:focus {
   color: #333;
 }
 
 /* New Task */
-.new-task {
+.adding-section__new-task {
   display: block;
   margin: 0 0 20px;
 }
 
-#new-task {
+.adding-section__input {
   width: 318px;
 }
 
 /* Task list */
-.list-item {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -122,11 +122,11 @@
   align-items: center;
 }
 
-.list-item > * {
+.list__item > * {
   vertical-align: middle;
 }
 
-.input-checkbox {
+.input_checkbox {
   margin: 0 10px;
 }
 
@@ -137,36 +137,36 @@
   width: 226px;
 }
 
-.list-item > .input-text {
+.list__item > .input_text {
   width: 226px;
 }
 
-.image-delete {
+.btn_delete__image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.image-delete:hover {
+.btn_delete__image:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks .task {
+.completed-section__completed-tasks .task {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list-item .input-text {
+.list__item .input_text {
   display: none;
 }
 
-.edit-mode > .input.input-text {
+.list__edit_mode > .input.input_text {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .task {
+.list__edit_mode .task {
   display: none;
 }
